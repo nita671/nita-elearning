@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Anita Bayo",
+      "username": "Anita",
+      "password": "pass1234"
+    },
+    {
+      "id": 1,
+      "fullname": "Alice Bayo",
+      "username": "Alice",
+      "password": "pass1234"
+    },
+    {
+      "id": 2,
+      "fullname": "Bob Bayo",
+      "username": "Bob",
+      "password": "pass1234"
+    }
+  ],
+
+  "blogs": [
+    {
+      "id": 1,
+      "title": "My Blog",
+      "content": "LadyTech Limited is a dynamic tech company spacialising in website development and graphic design. We create visually striking, user-friendly websites and engaging brand visuals tailord to help business stand out online. Our team blends creativity with cutting-edge technology to deliver custom digital solution that drive results!",
+      "author": "Anita Bayo",
+      "date": "April 10, 2025",
+      "comments": [
+        { "id": 1, "message": "Great work!", "blogId": "1" },
+        { "id": 2, "message": "Looking forward to more.", "blogId": "1" }
+      ]
+    }
+  ]
+}
