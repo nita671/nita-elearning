@@ -1,36 +1,161 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
+      "fullname": "Blog Admin1",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "id": "2",
       "fullname": "Anita Bayo",
       "username": "Anita",
       "password": "pass1234"
     },
     {
-      "id": 1,
+      "id": "3",
       "fullname": "Alice Bayo",
       "username": "Alice",
       "password": "pass1234"
     },
     {
-      "id": 2,
+      "id": "4",
       "fullname": "Bob Bayo",
       "username": "Bob",
       "password": "pass1234"
     }
   ],
-
   "blogs": [
     {
-      "id": 1,
+      "id": "1",
       "title": "My Blog",
       "content": "LadyTech Limited is a dynamic tech company spacialising in website development and graphic design. We create visually striking, user-friendly websites and engaging brand visuals tailord to help business stand out online. Our team blends creativity with cutting-edge technology to deliver custom digital solution that drive results!",
-      "author": "Anita Bayo",
+      "userId": "2",
       "date": "April 10, 2025",
       "comments": [
-        { "id": 1, "message": "Great work!", "blogId": "1" },
-        { "id": 2, "message": "Looking forward to more.", "blogId": "1" }
+        {
+          "id": 1,
+          "message": "Great work!"
+        },
+        {
+          "id": 2,
+          "message": "Looking forward to more."
+        },
+        {
+          "id": 1744686576405,
+          "message": "Good Job",
+          "blogId": "1"
+        }
       ]
+    },
+    {
+      "id": "5a57",
+      "title": "dksjlj",
+      "content": "dskjljd\ndjksjd\nksdjskl",
+      "userId": "1",
+      "date": 1744673577789,
+      "comments": [
+        {
+          "id": 1744683858910,
+          "message": "disdjlkj",
+          "blogId": "5a57"
+        },
+        {
+          "id": 1744683925131,
+          "message": "dkjsljd",
+          "blogId": "5a57"
+        },
+        {
+          "id": 1744683946518,
+          "message": "dkjskdj",
+          "blogId": "5a57"
+        },
+        {
+          "id": 1744684138148,
+          "message": "sam",
+          "blogId": "5a57"
+        }
+      ]
+    },
+    {
+      "id": "8ee9",
+      "title": "dsjk",
+      "content": "sdkjklsdj",
+      "userId": "1",
+      "date": 1744673714980,
+      "comments": [
+        {
+          "id": 1744691930387,
+          "message": "Hello world",
+          "blogId": "8ee9"
+        },
+        {
+          "id": 1744691944329,
+          "message": "How are you",
+          "blogId": "8ee9"
+        }
+      ],
+      "likes": [
+        {
+          "id": "21ea",
+          "userId": "2",
+          "blogId": "8ee9"
+        },
+        {
+          "id": "21ea",
+          "userId": "3",
+          "blogId": "8ee9"
+        },
+        {
+          "id": "362e",
+          "userId": "1",
+          "blogId": "8ee9"
+        }
+      ],
+      "user": {
+        "id": "1",
+        "fullname": "Blog Admin1",
+        "username": "admin",
+        "password": "admin"
+      }
+    },
+    {
+      "id": "e587",
+      "title": "jdslkjkldj",
+      "content": "kdjsdjlsjdlkjsd",
+      "userId": "1",
+      "date": "4/14/2025",
+      "comments": []
+    },
+    {
+      "id": "9a38",
+      "title": "kdsjkdj",
+      "content": "kdsjdkj",
+      "userId": "1",
+      "date": "4/14/2025",
+      "comments": []
+    }
+  ],
+  "likes": [
+    {
+      "id": "21ea",
+      "userId": "1",
+      "blogId": "5a57"
+    },
+    {
+      "id": "21ea",
+      "userId": "2",
+      "blogId": "8ee9"
+    },
+    {
+      "id": "21ea",
+      "userId": "3",
+      "blogId": "8ee9"
+    },
+    {
+      "id": "400d",
+      "userId": "1",
+      "blogId": "8ee9"
     }
   ]
 }

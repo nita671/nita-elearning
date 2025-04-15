@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Edit Page</title>
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
+  <body>
+    <h1>Blog Edit Page</h1>
+    <form class="card">
+      <input type="hidden" name="id" value="{{id}}" />
+      <input name="title" value="{{title}}" />
+      <textarea name="content">{{content}}</textarea>
+      <button type="submit">Update</button>
+      <!-- etc -->
+    </form>
+
+    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" src="../edit.js"></script>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>

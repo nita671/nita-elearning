@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Edit Page</title>
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
+  <body>
+    <h1>User Edit Page</h1>
+    <form class="card">
+      <input type="hidden" id="id" required value="{{id}}" />
+      <label for="fullname">Full Name</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        value="{{fullname}}"
+      />
+
+      <label for="username">User Name</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        value="{{username}}"
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        value="{{password}}"
+      />
+      <button type="submit">Update</button>
+    </form>
+    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" src="../edit.js"></script>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>

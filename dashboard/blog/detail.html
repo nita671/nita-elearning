@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Detail Page</title>
+    <link rel="stylesheet" href="/public/css/global.css" />
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-between">
+      <h1>Blog Detail Page</h1>
+      <div type="button" id="likes">
+        <img
+          src="/public/images/heart.png"
+          width="24"
+          height="24"
+          id="heart"
+          class="hidden"
+        />
+        <img
+          src="/public/images/heart-fill.png"
+          width="24"
+          height="24"
+          id="heart-fill"
+          class="hidden"
+        />
+        <span id="likes-count"></span>
+      </div>
+    </div>
+
+    <main>
+      <div
+        id="blogId"
+        style="opacity: 0; position: absolute"
+        data-blogId="{{id}}"
+      ></div>
+      <h2>{{title}}</h2>
+      <p>{{author}}</p>
+      <p>{{date}}</p>
+      <p>{{content}}</p>
+      <div class="comments">
+        <strong>Comments:</strong>
+        {{comments}}
+        <div class="comment-box">
+          <input placeholder="Add a comment" id="comment-input" />
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/public/js/main.js"></script>
+    <script type="module" src="./detail.js"></script>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>
