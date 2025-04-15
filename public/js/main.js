@@ -30,3 +30,7 @@ if (routeMap[path]) {
       console.log("❌ Failed to load module for page:", path, err);
     });
 }
+
+const navAction = document.querySelector(".nav-action")
+const navDashboard = navAction.querySelector(".dashboard")
+const navAuth = navAction.querySelector(".auth")

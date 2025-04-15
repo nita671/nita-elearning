@@ -10,7 +10,9 @@
   opacity: 0.9;
   font-size: 0.9rem;
 }
-
+.blog {
+  margin-top: 60px;
+}
 .toast-error {
   background: #d9534f;
 }
@@ -168,4 +170,66 @@ button:hover {
 
 .comment-box input {
   flex-grow: 1;
+}
+
+nav {
+  display: flex;
+  font-size: 10px;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #6190c0;
+  justify-content: space-between;
+ 
+}
+
+nav >ol {
+  justify-items: flex-start;
+}
+
+ul >li {
+  padding-left: 20px ;
+  margin-right: 60px;
+}
+
+ul, ol {
+  display: flex;
+  font-size: 2px;
+  list-style: none;
+  
+}
+nav > ul, ol > li {
+  margin-left: 15px;
+  list-style: none;
+  margin-top: 40px;
+  font-size: 12px;
+  display: flex;
+}
+
+nav > ul, ol > li > a {
+  margin-right: 0;
+  padding-right: 0;
+  height: 15px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+nav > ul> li > a {
+  margin-right: 0;
+  padding-right: 0;
+  height: 15px;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-action .hidden {
+ display: none;
 }

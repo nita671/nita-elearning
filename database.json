@@ -23,6 +23,12 @@
       "fullname": "Bob Bayo",
       "username": "Bob",
       "password": "pass1234"
+    },
+    {
+      "id": "ce65",
+      "fullname": "Anita Bay",
+      "username": "abayo",
+      "password": "nita1234"
     }
   ],
   "blogs": [
@@ -45,8 +51,31 @@
           "id": 1744686576405,
           "message": "Good Job",
           "blogId": "1"
+        },
+        {
+          "id": 1744712695009,
+          "message": "xcgv jb",
+          "blogId": "1"
+        },
+        {
+          "id": 1744741321277,
+          "message": "keep it up",
+          "blogId": "1"
         }
-      ]
+      ],
+      "likes": [
+        {
+          "id": "8698",
+          "userId": "ce65",
+          "blogId": "1"
+        }
+      ],
+      "user": {
+        "id": "2",
+        "fullname": "Anita Bayo",
+        "username": "Anita",
+        "password": "pass1234"
+      }
     },
     {
       "id": "5a57",
@@ -74,8 +103,31 @@
           "id": 1744684138148,
           "message": "sam",
           "blogId": "5a57"
+        },
+        {
+          "id": 1744717138439,
+          "message": "vhbj nk",
+          "blogId": "5a57"
+        },
+        {
+          "id": 1744717151370,
+          "message": "hi",
+          "blogId": "5a57"
         }
-      ]
+      ],
+      "likes": [
+        {
+          "id": "21ea",
+          "userId": "1",
+          "blogId": "5a57"
+        }
+      ],
+      "user": {
+        "id": "1",
+        "fullname": "Blog Admin1",
+        "username": "admin",
+        "password": "admin"
+      }
     },
     {
       "id": "8ee9",
@@ -126,14 +178,6 @@
       "userId": "1",
       "date": "4/14/2025",
       "comments": []
-    },
-    {
-      "id": "9a38",
-      "title": "kdsjkdj",
-      "content": "kdsjdkj",
-      "userId": "1",
-      "date": "4/14/2025",
-      "comments": []
     }
   ],
   "likes": [
@@ -156,6 +200,31 @@
       "id": "400d",
       "userId": "1",
       "blogId": "8ee9"
+    },
+    {
+      "id": "8698",
+      "userId": "ce65",
+      "blogId": "1"
+    },
+    {
+      "id": "7999",
+      "userId": "ce65",
+      "blogId": "5a57"
+    },
+    {
+      "id": "cee5",
+      "userId": "ce65",
+      "blogId": null
+    },
+    {
+      "id": "b05a",
+      "userId": "ce65",
+      "blogId": "8ee9"
+    },
+    {
+      "id": "7e04",
+      "userId": "ce65",
+      "blogId": "e587"
     }
   ]
 }
