@@ -11,13 +11,14 @@ _This does not save the changes it only prepare the change to be saved in the ne
 git commit -m "commit message"
 ```
 
----
----
-
 ## Push local committed (saved) changes to GitHub
 ```bash
 git push
 ```
+
+---
+---
+---
 
 # Configure and start project `json-server` database
 
@@ -26,9 +27,15 @@ git push
 npm install
 ```
 
-## Start `json_server` at [http://localhost:9000](http://localhost:9900)
+## Start `json_server` at [http://localhost:9900](http://localhost:9900)
 
 ```bash
 npm run database
+```
+
+## Start project at [http://localhost:3500](http://localhost:3500)
+
+```bash
+npm run dev
 ```
 
