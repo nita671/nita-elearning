@@ -2,7 +2,7 @@ import { updateBlog } from "../../api/blogs.js";
 import { showError } from "../../utils/index.js";
 
 export function init() {
-  const form = document.querySelector("form");
+  const form = document.getElementsByTagName("form");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -13,6 +13,8 @@ export function init() {
       content: document.getElementById("content").value,
       userId: localStorage.getItem("id") || "",
     };
+
+    console.log(form);
 
     updateBlog(blog.id, blog)
       .then((res) => {

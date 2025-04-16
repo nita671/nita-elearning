@@ -9,30 +9,34 @@
   <body>
     <header>
       <div>
-      <nav class="nav-bar">
-        <div class="nav-logo">
-        <img src="/public/images/1744393075660.jpg" width="24" height="24" alt="logo">
-        </div>
+        <nav class="nav-bar">
+          <div class="nav-logo">
+            <img
+              src="/public/images/1744393075660.jpg"
+              width="24"
+              height="24"
+              alt="logo"
+            />
+          </div>
           <ul class="nav-links">
-              <li><a href="/blog.html">HOME</a></li>
-              <li><a href="/dashboard/blog/list.html"> VIEW POSTS</a></li>
-              <li><a href="/dashboard/blog/create.html">CREATE POST</a></li>
+            <li><a href="/dashboard/blog/list">HOME</a></li>
+            <li><a href="/dashboard/blog/list"> VIEW POSTS</a></li>
+            <li><a href="/dashboard/blog/create">CREATE POST</a></li>
           </ul>
           <div class="nav-action">
-          <ol class=" auth">
-            <li><a href="/auth/login.html">Login</a></li>
-            <li><a href="/auth/signup.html">Signup</a></li>
-        </ol> 
-        <ol class="dashboard">
-          <li><a href="/dashboard/index.html">Dashboard</a></li>
-          <li><button id="logout">Logout</button></li>
-      </ol> 
-    </div>
-      </nav>
-  </header>
-</div>
-</div>
-    <h1 class="blog" >Blog List Page</h1>
+            <ol class="auth">
+              <li><a href="/auth/login">Login</a></li>
+              <li><a href="/auth/signup">Signup</a></li>
+            </ol>
+            <ol class="dashboard">
+              <li><a href="/dashboard/blog/list">Dashboard</a></li>
+              <li><button id="logout">Logout</button></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <h1 class="blog">Blog List Page</h1>
     <main>
       <div id="blogsList" class="grid"></div>
     </main>

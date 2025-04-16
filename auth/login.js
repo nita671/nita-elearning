@@ -1,4 +1,4 @@
-import { login } from "../api/auth.js";
+import { login, checkAuth } from "../api/auth.js";
 import { showError } from "../utils/index.js";
 
 export function init() {
@@ -19,7 +19,7 @@ export function init() {
           localStorage.setItem("id", user.id);
           localStorage.setItem("username", user.username);
           localStorage.setItem("fullname", user.fullname);
-          window.location.href = "/dashboard/";
+          window.location.href = "/dashboard/blog/list";
         } else {
           showError("Invalid credential");
         }
