@@ -19,31 +19,33 @@
             />
           </div>
           <ul class="nav-links">
-            <li><a href="/dashboard/blog/list">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="/dashboard/blog/list.html"> VIEW POSTS</a></li>
             <li><a href="/dashboard/blog/create.html">CREATE POST</a></li>
           </ul>
           <div class="nav-action">
-            <ol class="auth">
-              <li><a href="/auth/login.html">Login</a></li>
-              <li><a href="/auth/signup.html">Signup</a></li>
+            <ol class="auth hidden">
+              <li><a id="login" href="/auth/login">Login</a></li>
+              <li><a id="signup" href="/auth/signup">Signup</a></li>
             </ol>
-            <ol class="dashboard">
-              <li><a href="/dashboard/blog/list.html">Dashboard</a></li>
+            <ol class="dashboard hidden">
+              <li><a href="/dashboard/blog/list">Dashboard</a></li>
               <li><button id="logout">Logout</button></li>
             </ol>
           </div>
         </nav>
       </div>
     </header>
-    <h1>Blog Edit Page</h1>
-    <form class="card">
-      <input type="hidden" name="id" value="{{id}}" />
-      <input name="title" value="{{title}}" />
-      <textarea name="content">{{content}}</textarea>
-      <button type="submit">Update</button>
-      <!-- etc -->
-    </form>
+    <main>
+      <h1>Blog Edit Page</h1>
+      <form class="card">
+        <input type="hidden" name="id" value="{{id}}" />
+        <input name="title" value="{{title}}" />
+        <textarea name="content">{{content}}</textarea>
+        <button type="submit">Update</button>
+        <!-- etc -->
+      </form>
+    </main>
 
     <script type="module" src="/public/js/main.js"></script>
     <script type="module" src="../edit.js"></script>

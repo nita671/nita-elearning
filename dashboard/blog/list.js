@@ -18,9 +18,9 @@ function renderBlogs(blogs) {
     const userLiked =
       blog?.likes?.find((l) => l.userId === localStorage.getItem("id")) || null;
     const blogCard = document.createElement("div");
-    blogCard.className = "card";
+    blogCard.className = "card-listing";
     blogCard.innerHTML = `
-      <a href="${`/dashboard/blog/${blog.id}`}">
+      <a class="card-link" href="${`/dashboard/blog/${blog.id}`}">
         <div style="display:flex; justify-content:space-between">
           <h3>${blog.title}</h3>
           <div>
@@ -39,7 +39,6 @@ function renderBlogs(blogs) {
           <small>By ${blog.user?.fullname} on ${blog.date || null}</small>
       </a>
       <div class="action-btn">
-        <button class="${`edit_btn`}" data-blogId="${blog.id}">Edit</button>
         <button class="${`delete_btn`}" data-blogId="${blog.id}">Delete</button>
       </div>
       <div class="comments">
@@ -68,15 +67,15 @@ function renderBlogs(blogs) {
       });
     });
 
-    const editBtns = document.querySelectorAll(".edit_btn");
+    // const editBtns = document.querySelectorAll(".edit_btn");
 
-    editBtns.forEach((item) => {
-      item.addEventListener("click", (e) => {
-        let blogId;
-        console.log("ID clicked", blogId);
-        blogId = e?.target?.dataset?.blogid;
-        window.location.href = `/dashboard/blog/${blogId}/edit`;
-      });
-    });
+    // editBtns.forEach((item) => {
+    //   item.addEventListener("click", (e) => {
+    //     let blogId;
+    //     console.log("ID clicked", blogId);
+    //     blogId = e?.target?.dataset?.blogid;
+    //     window.location.href = `/dashboard/blog/${blogId}/edit`;
+    //   });
+    // });
   });
 }

@@ -78,58 +78,6 @@
       }
     },
     {
-      "id": "5a57",
-      "title": "dksjlj",
-      "content": "dskjljd\ndjksjd\nksdjskl",
-      "userId": "1",
-      "date": 1744673577789,
-      "comments": [
-        {
-          "id": 1744683858910,
-          "message": "disdjlkj",
-          "blogId": "5a57"
-        },
-        {
-          "id": 1744683925131,
-          "message": "dkjsljd",
-          "blogId": "5a57"
-        },
-        {
-          "id": 1744683946518,
-          "message": "dkjskdj",
-          "blogId": "5a57"
-        },
-        {
-          "id": 1744684138148,
-          "message": "sam",
-          "blogId": "5a57"
-        },
-        {
-          "id": 1744717138439,
-          "message": "vhbj nk",
-          "blogId": "5a57"
-        },
-        {
-          "id": 1744717151370,
-          "message": "hi",
-          "blogId": "5a57"
-        }
-      ],
-      "likes": [
-        {
-          "id": "21ea",
-          "userId": "1",
-          "blogId": "5a57"
-        }
-      ],
-      "user": {
-        "id": "1",
-        "fullname": "Blog Admin1",
-        "username": "admin",
-        "password": "admin"
-      }
-    },
-    {
       "id": "8ee9",
       "title": "dsjk",
       "content": "sdkjklsdj",
@@ -145,6 +93,11 @@
           "id": 1744691944329,
           "message": "How are you",
           "blogId": "8ee9"
+        },
+        {
+          "id": 1744839585738,
+          "message": "djslkdj",
+          "blogId": "8ee9"
         }
       ],
       "likes": [
@@ -159,8 +112,13 @@
           "blogId": "8ee9"
         },
         {
-          "id": "362e",
+          "id": "400d",
           "userId": "1",
+          "blogId": "8ee9"
+        },
+        {
+          "id": "b05a",
+          "userId": "ce65",
           "blogId": "8ee9"
         }
       ],
@@ -184,7 +142,7 @@
     {
       "id": "21ea",
       "userId": "1",
-      "blogId": "5a57"
+      "blogId": null
     },
     {
       "id": "21ea",
@@ -209,7 +167,7 @@
     {
       "id": "7999",
       "userId": "ce65",
-      "blogId": "5a57"
+      "blogId": null
     },
     {
       "id": "cee5",

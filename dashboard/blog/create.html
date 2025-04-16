@@ -19,16 +19,16 @@
             />
           </div>
           <ul class="nav-links">
-            <li><a href="/blog">HOME</a></li>
+            <li><a href="/">HOME</a></li>
             <li><a href="/dashboard/blog/list"> VIEW POSTS</a></li>
             <li><a href="/dashboard/blog/create">CREATE POST</a></li>
           </ul>
           <div class="nav-action">
-            <ol class="auth">
-              <li><a href="/auth/login">Login</a></li>
-              <li><a href="/auth/signup">Signup</a></li>
+            <ol class="auth hidden">
+              <li><a id="login" href="/auth/login">Login</a></li>
+              <li><a id="signup" href="/auth/signup">Signup</a></li>
             </ol>
-            <ol class="dashboard">
+            <ol class="dashboard hidden">
               <li><a href="/dashboard/blog/list">Dashboard</a></li>
               <li><button id="logout">Logout</button></li>
             </ol>
@@ -36,14 +36,16 @@
         </nav>
       </div>
     </header>
-    <h1>Blog Create Page</h1>
-    <form class="card">
-      <label for="title">Title</label>
-      <input id="title" name="title" required />
-      <label for="content">Content</label>
-      <textarea id="content" name="content" required rows="15"></textarea>
-      <button type="submit">Create</button>
-    </form>
+    <main>
+      <h1>Blog Create Page</h1>
+      <form class="card">
+        <label for="title">Title</label>
+        <input id="title" name="title" required />
+        <label for="content">Content</label>
+        <textarea id="content" name="content" required rows="15"></textarea>
+        <button type="submit">Create</button>
+      </form>
+    </main>
 
     <script type="module" src="/public/js/main.js"></script>
     <script type="module" src="./index.js"></script>

@@ -7,18 +7,55 @@
     <link rel="stylesheet" href="/public/css/global.css" />
   </head>
   <body>
-    <h1>Hello world</h1>
-    <i data-lucide="volume-2" class="my-class"></i>
-    <i data-lucide="x"></i>
-    <i data-lucide="menu"></i>
+    <header>
+      <div>
+        <nav class="nav-bar">
+          <div class="nav-logo">
+            <img
+              src="/public/images/1744393075660.jpg"
+              width="24"
+              height="24"
+              alt="logo"
+            />
+          </div>
+          <ul class="nav-links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/dashboard/blog/list"> VIEW POSTS</a></li>
+            <li><a href="/dashboard/blog/create">CREATE POST</a></li>
+          </ul>
+          <div class="nav-action">
+            <ol class="auth hidden">
+              <li><a id="login" href="/auth/login">Login</a></li>
+              <li><a id="signup" href="/auth/signup">Signup</a></li>
+            </ol>
+            <ol class="dashboard hidden">
+              <li><a href="/dashboard/blog/list">Dashboard</a></li>
+              <li><button id="logout">Logout</button></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Content Section -->
+    <main>
+      <section class="intro-section">
+        <h1>Welcome to Anita Bayo Blog Site</h1>
+        <p>
+          Explore the latest posts or create your own. Join the conversation!
+        </p>
+        <button class="create-post-btn">
+          <a href="/dashboard/blog/list">Explore</a>
+        </button>
+      </section>
+    </main>
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
     </script>
     <script type="module" src="/public/js/main.js"></script>
-    <script>
+    <!-- <script>
       window.location.href = "/auth/login";
-    </script>
+    </script> -->
   </body>
 </html>

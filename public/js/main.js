@@ -35,6 +35,7 @@ if (routeMap[path]) {
 const navAction = document.querySelector(".nav-action");
 const navDashboard = navAction.querySelector(".dashboard");
 const navAuth = navAction.querySelector(".auth");
+const logoutBtn = navDashboard.querySelector("#logout");
 
 if (localStorage.getItem("username")) {
   navDashboard.classList.remove("hidden");
@@ -43,3 +44,8 @@ if (localStorage.getItem("username")) {
   navDashboard.classList.add("hidden");
   navAuth.classList.remove("hidden");
 }
+
+logoutBtn.addEventListener("click", (e) => {
+  localStorage.clear();
+  window.location.href = "/";
+});
